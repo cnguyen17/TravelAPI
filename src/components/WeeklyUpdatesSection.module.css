@@ -1,0 +1,162 @@
+.frameChild {
+  position: absolute;
+  width: calc(100% + 0.46px);
+  top: 0;
+  right: -0.46px;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 396.2px;
+  object-fit: cover;
+}
+.formTitle,
+.formTitleSubtext {
+  align-self: stretch;
+  position: relative;
+}
+.formTitleSubtext {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.formTitle {
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray-100);
+}
+.formHeader {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.fillInYour {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 25.42px;
+  font-family: var(--components-button-large1);
+  color: var(--color-slategray);
+  text-align: left;
+}
+.formText {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.destinationNameInput {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+}
+.formFields {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.button1 {
+  position: relative;
+  font-size: var(--components-button-large1-size);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--components-button-large1);
+  color: var(--primary-contrast1);
+  text-align: left;
+}
+.button,
+.unstyledbutton {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.unstyledbutton {
+  padding: var(--padding-7xs) var(--padding-sm);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-orange);
+  border-radius: var(--br-2xs);
+  width: 122.6px;
+  height: 41.86px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover {
+  background-color: var(--color-saddlebrown);
+}
+.form,
+.shareYourTravelsForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form {
+  align-self: stretch;
+  border-radius: var(--br-md);
+  background-color: var(--primary-contrast1);
+  box-shadow: 0 0 17.94px rgba(0, 0, 0, 0.03);
+  border: 0.7px solid var(--color-whitesmoke);
+  padding: var(--padding-lg) var(--padding-2xl);
+  align-items: flex-start;
+  gap: var(--gap-md);
+}
+.shareYourTravelsForm {
+  position: relative !important;
+  top: 38.87px;
+  left: auto !important;
+  width: 410.4px;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  align-items: center;
+  gap: var(--gap-4xl);
+  margin-left: auto;
+  margin-right: auto;
+}
+.rectangleParent {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-aliceblue);
+  height: 395.45px;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-cornflowerblue-300);
+  font-family: var(--components-button-large1);
+}
+@media screen and (max-width: 768px) {
+  .shareYourTravelsForm {
+    padding: var(--padding-4xl) 0;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .button {
+    width: 100%;
+  }
+  .button:hover {
+    background-color: var(--color-peru);
+  }
+  .shareYourTravelsForm {
+    padding-left: var(--padding-4xl);
+    padding-right: var(--padding-4xl);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative !important;
+    left: auto !important;
+    width: 100%;
+  }
+}

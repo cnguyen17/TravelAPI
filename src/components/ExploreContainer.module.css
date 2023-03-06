@@ -1,0 +1,181 @@
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+  }
+}
+.bannerBackground,
+.bannerGradient {
+  position: absolute;
+  width: calc(100% + 0.46px);
+  right: -0.46px;
+  left: 0;
+}
+.bannerGradient {
+  top: 0;
+  background: linear-gradient(78.78deg, #114f8b 5.2%, #2a9ad7);
+  height: 478.36px;
+}
+.bannerBackground {
+  top: 0.3px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 478.43px;
+  object-fit: cover;
+}
+.findTheBest,
+.letsExplore {
+  align-self: stretch;
+  position: relative;
+  line-height: 50.09px;
+}
+.findTheBest {
+  font-size: var(--font-size-3xl);
+  line-height: 23.92px;
+  font-family: var(--components-button-large1);
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.departureField,
+.title {
+  align-self: stretch;
+}
+.inputGroup,
+.inputGroup1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-8xs) var(--padding-4xs);
+  align-items: center;
+  justify-content: center;
+}
+.inputsRow {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button {
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.34px;
+  line-height: 19.44px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--components-button-large1);
+  color: var(--primary-contrast1);
+  text-align: center;
+  display: inline-block;
+  width: 109.87px;
+}
+.buttonGroup,
+.searchFlightsButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.searchFlightsButton {
+  border-radius: var(--br-2xs);
+  width: 122.6px;
+  height: 41.86px;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.searchFlightsButton,
+.searchFlightsButton:hover {
+  background-color: var(--color-orange);
+}
+.buttonGroup {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-8xs);
+  background-color: transparent;
+}
+.buttonGroup:active {
+  animation: 0.5s ease 0s infinite normal none shadow-inset-center;
+  opacity: 1;
+}
+.searchForm {
+  align-self: stretch;
+  border-radius: var(--br-sm);
+  background-color: var(--primary-contrast1);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.searchContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 478.43px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-9xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-7xl);
+}
+.searchSection {
+  align-self: stretch;
+  position: relative;
+  height: 478.43px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--font-size-10xl);
+  color: var(--primary-contrast1);
+  font-family: var(--font-baloo-bhai);
+}
+@media screen and (max-width: 768px) {
+  .inputsRow {
+    width: 100%;
+    flex: unset;
+    align-self: stretch;
+  }
+  .searchFlightsButton {
+    margin-right: auto;
+  }
+  .buttonGroup {
+    width: 100%;
+    text-align: left;
+  }
+  .searchForm {
+    flex-direction: column;
+  }
+  .searchContainer {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .letsExplore {
+    font-size: var(--font-size-9xl);
+    line-height: 48px;
+  }
+  .inputGroup,
+  .inputGroup1 {
+    width: 100%;
+    flex: unset;
+    align-self: stretch;
+  }
+  .inputsRow {
+    flex-direction: column;
+  }
+  .searchFlightsButton {
+    width: 100% !important;
+  }
+}
